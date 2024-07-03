@@ -1,10 +1,13 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image ,TouchableOpacity} from 'react-native'
 import React from 'react'
 
 export default function Button() {
   return (
-    <View>
-      <Image source={require("../assets/../assets/add_circle.png")}/>
-    </View>
+    <TouchableOpacity onPress={()=> addToCart(item)}>
+
+        <Image source={require("../assets/../assets/add_circle.png")}/>
+
+    </TouchableOpacity>
+    
   )
 }
